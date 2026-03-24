@@ -94,7 +94,7 @@ if st.button("🚀 เริ่มวิเคราะห์ความเส�
         m2.metric("โอกาสในการผิดนัดชำระหนี้", f"{prob*100:.2f}%")
         
         st.write(f"**Confidence Score:**")
-        st.progress(prob)
+        st.progress(float(prob))
         
         if prob > 0.6:
             st.error(f"🚨 ระบบประเมินว่าลูกค้าท่านนี้มีความเสี่ยง **{risk_level}** ในการผิดนัดชำระหนี้")
